@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -64,24 +65,22 @@
 
 <br>
 
+
 <p>
     <img alt="Trippy cat" src="cat.gif"
          style="height: 300px; width: 350px" id="imgClickAndChange" onclick="changeImage()"  />
 </p>
 
-<script language="javascript">
-    function changeImage() {
 
-        if (document.getElementById("imgClickAndChange").src == "dog.gif")
-        {
-            document.getElementById("imgClickAndChange").src = "cat.gif";
-        }
-        else
-        {
-            document.getElementById("imgClickAndChange").src = "dog.gif";
-        }
-    }
+<script>
+
+    $("img[src='cat.gif']").click(function () {
+        $(this).attr("src","dog.gif")
+    })
+
 </script>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
