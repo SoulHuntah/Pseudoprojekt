@@ -60,6 +60,29 @@
     onclick="prevent_leave(); return false;">J&auml;&auml;me siia
 </a>
 
+<br>
+
+<br>
+
+<p>
+    <img alt="Trippy cat" src="cat.gif"
+         style="height: 300px; width: 350px" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "dog.gif")
+        {
+            document.getElementById("imgClickAndChange").src = "cat.gif";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange").src = "dog.gif";
+        }
+    }
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
