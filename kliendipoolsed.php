@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -80,7 +81,35 @@
 
 </script>
 
+<input type="button" id="change_background" value="Red" />
 
+<script>
+
+    $( "#change_background" ).on( "click", function() {
+        $("body").first().css("background-color","red");
+    });
+
+</script>
+
+<input type="button" id="change_backgroundg" value="Green" />
+
+<script>
+
+    $( "#change_backgroundg" ).on( "click", function() {
+        $("body").first().css("background-color","green");
+    });
+
+</script>
+
+<input type="button" id="change_backgroundb" value="Blue" />
+
+<script>
+
+    $( "#change_backgroundb" ).on( "click", function() {
+        $("body").first().css("background-color","blue");
+    });
+
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
