@@ -41,8 +41,23 @@
     }
 </script>
 
+<script type="text/javascript">
+    function prevent_leave()
+    {
+        alert("J‰‰me siia!");
+    }
+</script>
+
 <a href="http://WWW.khk.ee"
    onClick="show_helloworld_alert_box()">Tere maailm
+</a>
+
+<br>
+
+<br>
+
+<a href="http://somelink.com"
+    onclick="prevent_leave(); return false;">J&auml;&auml;me siia
 </a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
